@@ -8,7 +8,25 @@ function HomePage() {
       <Head>
         <title>Main Page</title>
       </Head>
-      <h1>Hello World</h1>
+      <h1 className="title" style={{ color: "pink" }}>
+        Hello World
+      </h1>
+      // ilave className de verilebilir ama zaten unique
+      {/* <style jsx>{`
+        .title {
+          background-color: yellow;
+        }
+      `}</style> */}
+      <style jsx>{`
+        h1 {
+          background-color: yellow;
+        }
+      `}</style>
+      <style global jsx>{`
+        body {
+          background-color: cyan;
+        }
+      `}</style>
     </Layout>
   );
 }

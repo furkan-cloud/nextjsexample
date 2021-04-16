@@ -1,10 +1,11 @@
 import Link from "next/link";
+import styles from "./nav.module.css";
 
 const Navigation = () => {
   return (
     <nav>
       <Link href="/">
-        <a>Main Page</a>
+        <a className={styles.link}>Main Page</a>
       </Link>
       <Link href="/about">
         <a>About Us</a>
